@@ -1,0 +1,103 @@
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    padding: 10pt;
+}
+
+.brand {
+    color: white;
+    font-family: elephant;
+    text-decoration: none;
+    font-size: 30pt;
+    padding: 10px;
+}
+
+/* photo gallery for mobile */
+.photo1,
+.photo2,
+.photo3,
+.photo4 {
+    align-items: center;
+}
+
+.photo1 button,
+.photo2 button,
+.photo3 button,
+.photo4 button {
+    margin-top: 00px;
+}
+
+
+.photogallery {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.photo1,
+.photo2,
+.photo3,
+.photo4 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.photo1 img,
+.photo2 img,
+.photo3 img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px gray;
+    justify-content: center;
+}
+
+.photo1 button,
+.photo2 button,
+.photo3 button,
+.photo4 button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    margin-top: 130px;
+    width: 100px;
+    padding: 15px;
+}
+
+.photo1 button:hover,
+.photo2 button:hover,
+.photo3 button:hover,
+.photo4 button:hover {
+    background-color: #032448;
+    color: white;
+    transition: 1s;
+}
+
+.photo1 img:hover,
+.photo2 img:hover,
+.photo3 img:hover,
+.photo4 img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    box-shadow: 0px 0px 5px 5px grey;
+}
+
+@media (max-width:800px) {
+    /* book gallery for mobile */
+    .photo1,.photo2,.photo3 {
+        flex-direction: column;
+        align-items: center;
+    }
+}
